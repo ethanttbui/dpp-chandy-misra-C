@@ -14,8 +14,8 @@ C implementation of Chandy/Misra solution to the Dinning Philosophers problem
 
     ./DPP N S T
 
-N (int): number of philosophers  
-S (int): a seed for generating a sequence of random numbers, representing the amount of time philosophers spend on eating and thinking  
+N (int): the number of philosophers  
+S (int): the seed for generating a sequence of random numbers, representing the amount of time philosophers spend on eating and thinking  
 T (int): the amount of time (in seconds) for which the simulation will run  
 
 # Problem Statement
