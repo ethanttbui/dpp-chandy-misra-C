@@ -1,4 +1,4 @@
-# chandy-misra-C
+# dpp-chandy-misra-C
 
 C implementation of Chandy/Misra solution to the Dinning Philosophers problem
 
