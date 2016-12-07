@@ -4,15 +4,15 @@ C implementation of Chandy/Misra solution to the Dinning Philosophers problem
 
 # Configuration
 
-System requirement: Ubuntu 14.04 
+**System requirement:** Ubuntu 14.04 
   
-Compile:  
+**Compile:**
 
-  gcc DPP.c -o DPP -Wall -pthread
+    gcc DPP.c -o DPP -Wall -pthread
 
-Run:  
+**Run:**  
 
-  ./DPP N S T
+    ./DPP N S T
 
 N (int): number of philosophers  
 S (int): a seed for generating a sequence of random numbers, representing the amount of time philosophers spend on eating and thinking 
@@ -27,7 +27,7 @@ Eating is not limited by the remaining amounts of spaghetti or stomach space; an
   
 The problem is how to design a discipline of behavior (a concurrent algorithm) such that no philosopher will starve; i.e., each can forever continue to alternate between eating and thinking, assuming that no philosopher can know when others may want to eat or think.
 
-Source: (https://en.wikipedia.org/wiki/Dining_philosophers_problem "Wikipedia")
+Source: [Wikipedia](https://en.wikipedia.org/wiki/Dining_philosophers_problem "Wikipedia")
 
 # Chandy/Misra Solution
 
@@ -36,5 +36,5 @@ Source: (https://en.wikipedia.org/wiki/Dining_philosophers_problem "Wikipedia")
 3. When a philosopher with a fork receives a request message, they keep the fork if it is clean, but give it up when it is dirty. If the philosopher sends the fork over, they clean the fork before doing so.
 4. After a philosopher is done eating, all their forks become dirty. If another philosopher had previously requested one of the forks, the philosopher that has just finished eating cleans the fork and sends it.
 
-Source: (https://en.wikipedia.org/wiki/Dining_philosophers_problem "Wikipedia")
+Source: [Wikipedia](https://en.wikipedia.org/wiki/Dining_philosophers_problem "Wikipedia")
 
